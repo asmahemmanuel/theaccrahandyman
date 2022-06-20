@@ -1,8 +1,6 @@
 
 h1 {
-    // padding: rem;
     color: white;
-    // background-color: black;
     font-family: 'calibri', sans-serif;
 
 }
@@ -16,12 +14,8 @@ h1 {
 
 $primary: #10b3ff;
 $secondary: green;
-// $dark: #300;
 $light:rgba(250, 250, 250, 0.479);
-// $success: #0fa;
-// $info: #555;
-// $warning: red;
-// $danger: red;
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
