@@ -1,0 +1,29 @@
+h1 {
+    background-color:white;
+}
+
+
+.container {
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340__340.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: justify;
+    background-size: cover;
+    padding-top: 50px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 100px;
+    border-radius: 50px;
+}
+
+.container h1, p {
+    background-color: #ffffff73;
+    // background-color: white;
+    padding: 20px;
+}
+
+$light: #fdd;
+$info: #555;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

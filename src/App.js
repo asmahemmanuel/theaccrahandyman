@@ -7,8 +7,8 @@ import BudgetCard from "./components/BudgetCard"
 import UncategorizedBudgetCard from "./components/UncategorizedBudgetCard"
 import TotalBudgetCard from "./components/TotalBudgetCard"
 import { useState } from "react"
-import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "./contexts/BudgetsContext"
-import './App.scss'
+import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "./contexts/BudgetsContext";
+
 
 
 function App() {
@@ -27,7 +27,9 @@ function App() {
     <>
       <Container className="my-4">
         <Stack direction="horizontal" gap="2" className="mb-4">
-          <h1 className="me-auto">DEVPOD EXPENSE TRACKER </h1>
+          <h1 className="me-auto">DEVPOD EXPENSE TRACKER 
+          <h6>The Accra Handyman</h6>
+          </h1>
           <Button variant="primary" onClick={() => setShowAddBudgetModal(true)}>
             Add Project
           </Button>
