@@ -8,7 +8,7 @@ import UncategorizedBudgetCard from "./components/UncategorizedBudgetCard"
 import TotalBudgetCard from "./components/TotalBudgetCard"
 import { useState } from "react"
 import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "./contexts/BudgetsContext";
-
+import {useUserState} from "./state/store.js"
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
   const [viewExpensesModalBudgetId, setViewExpensesModalBudgetId] = useState()
   const [addExpenseModalBudgetId, setAddExpenseModalBudgetId] = useState()
   const { budgets, getBudgetExpenses } = useBudgets()
+  const logout = useUserState((state) => state.logOut)
 
   function openAddExpenseModal(budgetId) {
     setShowAddExpenseModal(true)
@@ -37,6 +38,7 @@ function App() {
             Add Expense
           </Button>
         </Stack>
+        <button onClick={() => logout()}>Logout</button>
         <div
           style={{
             display: "grid",
