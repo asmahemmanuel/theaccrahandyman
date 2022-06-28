@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.js';
 import './custom.scss';
-
 import { BudgetsProvider } from "./contexts/BudgetsContext";
+
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

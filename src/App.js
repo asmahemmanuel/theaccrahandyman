@@ -10,6 +10,7 @@ import { useState } from "react"
 import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "./contexts/BudgetsContext";
 
 
+
 function App() {
   const [showAddBudgetModal, setShowAddBudgetModal] = useState(false)
   const [showAddExpenseModal, setShowAddExpenseModal] = useState(false)
@@ -29,10 +30,10 @@ function App() {
           <h1 className="me-auto">DEVPOD EXPENSE TRACKER 
           <h6>The Accra Handyman</h6>
           </h1>
-          <Button variant="primary" onClick={() => setShowAddBudgetModal(true)}>
+          <Button variant="danger" onClick={() => setShowAddBudgetModal(true)}>
             Add Project
           </Button>
-          <Button variant="outline-primary" onClick={openAddExpenseModal}>
+          <Button variant="warning" onClick={openAddExpenseModal}>
             Add Expense
           </Button>
         </Stack>
